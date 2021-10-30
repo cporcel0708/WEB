@@ -1,0 +1,78 @@
+
+header#encabezado{
+    > h1{
+        text-align: center;
+        font: 200% sans-serif;
+    }
+}
+#nueva{
+    display: flex;
+    flex-direction: row;
+    > input{ // > sifnifica que es un hijo
+        flex-grow: 1; //especifica el factor de crecimiento
+        margin-right: 1rem;
+        font-size: 1.5rem;
+        width: 3rem;
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;        
+    }
+    > button{
+        background-color: white;  
+    }
+}
+
+ul#listado {    
+    display: flex;
+    flex-direction: column;
+    list-style: none; //stilo de listas: saco el punto
+    padding: 0;
+    
+    > li {
+        display: flex;       
+        flex-direction: row; //orden horizontalmente los objetos
+        justify-content: space-between; //ordena los objetas espaciados entre ellos igual
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border-style: solid;
+        border-color: black;
+        font-size: 1.5rem;
+        font: 150% sans-serif;
+        border-top-width: 2px;
+        border-right-width: 2px;
+        border-bottom-width: 2px;
+        border-left-width: 2px;                
+
+        div{
+            display: flex;
+            flex-direction: flex;            
+            
+            input[type ="checkbox"]{
+                margin-right: 1rem;
+                width:25px;
+                height:25px;
+
+            }         
+
+            p{
+                margin: 0; 
+                              
+            }
+        }
+       
+        button {
+            background-color: transparent;
+            border: 0px solid black;
+            font-size:  1.2rem;
+            > sgv {
+                width: 2rem;
+            }
+
+        }
+    }
+
+}
+.chek:checked + p{
+    text-decoration: line-through;
+}
